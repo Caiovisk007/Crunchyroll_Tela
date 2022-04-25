@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView_crunchyroll"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/crunchyroll" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="crunchyroll"
+        android:textColor="#ffa500"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_crunchyroll"
+        app:layout_constraintStart_toEndOf="@+id/imageView_crunchyroll"
+        app:layout_constraintTop_toTopOf="@+id/imageView_crunchyroll" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="144dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_crunchyroll"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/imageView_crunchyroll" />
+
+    <TextView
+        android:id="@+id/populares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="MAIS POPULARES"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_crunchyroll" />
+
+    <ImageView
+        android:id="@+id/fotoOnepiece"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/populares"
+        app:srcCompat="@drawable/onepiecepronto" />
+
+    <ImageView
+        android:id="@+id/fotoAttack"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@id/fotoOnepiece"
+        app:layout_constraintTop_toBottomOf="@+id/populares"
+        app:srcCompat="@drawable/attackpronto"/>
+
+    <ImageView
+        android:id="@+id/fotoKimetsu"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@id/fotoAttack"
+        app:layout_constraintTop_toBottomOf="@id/populares"
+        app:srcCompat="@drawable/kimetsupronto"/>
+
+    <TextView
+        android:id="@+id/recemAtualizados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="RECÉM ATUALIZADOS"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/populares"
+        app:layout_constraintTop_toBottomOf="@+id/fotoOnepiece" />
+
+    <ImageView
+        android:id="@+id/fotoBlackclover"
+        app:srcCompat="@drawable/blackpronto"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recemAtualizados" />
+
+    <ImageView
+        android:id="@+id/fotoBoruto"
+        app:srcCompat="@drawable/borutopronto"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@id/fotoBlackclover"
+        app:layout_constraintTop_toBottomOf="@+id/recemAtualizados" />
+
+    <ImageView
+        android:id="@+id/fotoDrstone"
+        android:layout_width="130dp"
+        android:layout_height="239dp"
+        app:srcCompat="@drawable/drstonepronto"
+        app:layout_constraintStart_toEndOf="@id/fotoBoruto"
+        app:layout_constraintTop_toBottomOf="@+id/recemAtualizados"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="660dp"
+        app:srcCompat="@drawable/navigation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
